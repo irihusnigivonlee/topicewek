@@ -1,0 +1,214 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(230, 194, 235, 0.466);
+}
+
+/* Gaya dasar untuk menu */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Banner */
+.banner {
+    position: sticky;
+    width: 100%; /* Lebar 100% dari layar */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang melampaui batas */
+    
+    
+}
+
+.banner-img {
+    width: 100%; /* Gambar mengisi lebar layar */
+    height: auto; /* Menjaga proporsi gambar */
+    line-gap-override: 1px;
+}
+
+
+nav {
+    background-color: #fbf6f6;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left; /* Menyusun menu secara horizontal */
+    padding: 10px 0;
+}
+
+li {
+    position: relative;
+}
+
+a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    background-color: #faf6f6;
+}
+
+a:hover {
+    background-color: #57575794;
+}
+
+/* Submenu */
+ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #333;
+    flex-direction: column;
+}
+
+li:hover > ul {
+    display: block;
+}
+
+/* Styling untuk sub-sub menu */
+ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+/* Hamburger menu (tampilan mobile) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: rgb(3, 98, 115);
+}
+
+/* Responsif: Ketika lebar layar kecil, ubah menu menjadi hamburger */
+@media screen and (max-width: 768px) {
+    ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul.active {
+        display: block;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Submenu pada tampilan mobile */
+    ul ul {
+        position: static;
+        display: none;
+    }
+
+    li.active > ul {
+        display: block;
+    }
+
+    /* Sub-submenu */
+    ul ul ul {
+        display: none;
+    }
+
+    li.active > ul > li.active > ul {
+        display: block;
+    }
+}
+
+/* Container Produk */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Kartu Produk */
+.product-card {
+    background-color: #db68e6;
+    border: 1px solid #560606;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 0 8px rgba(236, 137, 7, 0.922);
+    transition: transform 0.2s ease;
+    border-radius: 7px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 8px 0 5px;
+    font-size: 0.7em;
+}
+
+.product-card p {
+    color: rgb(50, 236, 249);
+    border-radius: 5px;
+    background-color: rgb(8, 94, 118);
+    
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Open Footer */
+.footer{
+    text-align: center;
+    background-color: black;
+    height: 70px;
+    position: sticky;
+    bottom: 2px;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: 100;
+}
+.footer h5{
+    color: rgb(246, 246, 241);
+    font-weight: 200;
+    background-color: black;
+}
+.footer h4{
+    font-weight: 100;
+    color: rgb(97, 227, 242);
+    background-color: black;
+}
+/* Close Footer */
