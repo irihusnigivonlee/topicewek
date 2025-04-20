@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:silver;
 }
 
 /* Gaya dasar untuk menu */
@@ -139,19 +138,21 @@ ul ul ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 25px;
     max-width: 1200px;
     margin: auto;
+    background-image: url('img/bgku2.jpg'); /* Path to your image */
 }
 
 /* Kartu Produk */
 .product-card {
-    border: 2px solid #560606;
+    border: 1.5px solid #090808;
     text-align: center;
     padding: 5px;
-    box-shadow: 0 0 8px rgba(231, 20, 243, 0.922);
+    box-shadow: 0 0 15px rgba(248, 247, 248, 0.922);
     transition: transform 0.2s ease;
     border-radius: 7px;
+    background-color: pink;
 }
 
 .product-card:hover {
@@ -161,8 +162,9 @@ ul ul ul {
 .product-card img {
     width: 100%;
     height: auto;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    
 }
 
 .product-card h3 {
@@ -173,7 +175,7 @@ ul ul ul {
 .product-card p {
     color: rgb(11, 7, 112);
     border-radius: 5px;
-    background-color: rgb(235, 102, 13);
+    background-color: tomato;
     opacity:5;
 }
 
