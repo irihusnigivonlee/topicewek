@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgba(230, 194, 235, 0.466);
+    background-color:silver;
 }
 
 /* Gaya dasar untuk menu */
@@ -31,6 +31,7 @@ body {
 nav {
     background-color: #fbf6f6;
     border-radius: 10px;
+    opacity: 9999;
 }
 
 ul {
@@ -145,11 +146,10 @@ ul ul ul {
 
 /* Kartu Produk */
 .product-card {
-    background-color: #db68e6;
-    border: 1px solid #560606;
+    border: 2px solid #560606;
     text-align: center;
     padding: 5px;
-    box-shadow: 0 0 8px rgba(236, 137, 7, 0.922);
+    box-shadow: 0 0 8px rgba(231, 20, 243, 0.922);
     transition: transform 0.2s ease;
     border-radius: 7px;
 }
@@ -171,10 +171,10 @@ ul ul ul {
 }
 
 .product-card p {
-    color: rgb(50, 236, 249);
+    color: rgb(11, 7, 112);
     border-radius: 5px;
-    background-color: rgb(8, 94, 118);
-    
+    background-color: rgb(235, 102, 13);
+    opacity:5;
 }
 
 /* Responsive Breakpoints */
@@ -202,13 +202,13 @@ ul ul ul {
     font-weight: 100;
 }
 .footer h5{
-    color: rgb(246, 246, 241);
+    color: rgb(247, 247, 252);
     font-weight: 200;
     background-color: black;
 }
 .footer h4{
     font-weight: 100;
-    color: rgb(97, 227, 242);
-    background-color: black;
+    color: rgb(9, 10, 8);
+    background-color: tomato;
 }
 /* Close Footer */
