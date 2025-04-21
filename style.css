@@ -149,10 +149,10 @@ ul ul ul {
     border: 1.5px solid #090808;
     text-align: center;
     padding: 5px;
-    box-shadow: 0 0 15px rgba(248, 247, 248, 0.922);
+    box-shadow: 0 0 8px rgb(247, 5, 247);
     transition: transform 0.2s ease;
     border-radius: 7px;
-    background-color: pink;
+    background-color: rgb(11, 244, 77);
 }
 
 .product-card:hover {
