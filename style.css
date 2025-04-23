@@ -10,23 +10,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
-/* Banner */
-.banner {
-    position: sticky;
-    width: 100%; /* Lebar 100% dari layar */
-    overflow: hidden; /* Menyembunyikan bagian gambar yang melampaui batas */
-    
-    
-}
-
-.banner-img {
-    width: 100%; /* Gambar mengisi lebar layar */
-    height: auto; /* Menjaga proporsi gambar */
-    line-gap-override: 1px;
-}
-
-
 nav {
     background-color: #fbf6f6;
     border-radius: 10px;
