@@ -64,7 +64,7 @@ ul ul ul {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    padding: 10px;
+    padding: 8px;
 }
 
 .bar {
